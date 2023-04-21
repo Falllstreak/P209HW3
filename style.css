@@ -1,5 +1,57 @@
+
 body {
+    line-height: 1.5;
+    font-size: 20px;
+    color: #f44336;
+    background: rgb(19, 18, 18);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(19, 18, 18, 1) 0%,
+      rgba(10, 43, 45, 1) 50%,
+      rgba(19, 18, 18, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(19, 18, 18, 1) 0%,
+      rgba(10, 43, 45, 1) 50%,
+      rgba(19, 18, 18, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(19, 18, 18, 1) 0%,
+      rgba(10, 43, 45, 1) 50%,
+      rgba(19, 18, 18, 1) 100%
+    );
+  }
+  form {
+    text-align: left;
+    margin-left: 40%;
+    margin-right: 40%
+  }
+  #square, #cubed, #fourth {
+    color: #f44336;
+    margin-top: 10px;
+    background-color:rgba(19, 18, 18, 0.8);
+    font-size: 20px;
+    border-radius: 8px;
+  }
+  #output1, #output2, #output3{
     text-align: center;
-    margin-top: 20%;
-    background-color: peru;
-}
+    color: #f44336;
+    margin-top: 10px;
+    background-color: rgba(10, 43, 45);
+    font-size: 20px;
+    border-radius: 8px;
+  }
+  #math {
+    text-align: center;
+    border-color: red;
+    background: rgba(10, 43, 45, 0);
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  legend {
+    font-size: 30px;
+    text-align: center;
+  }

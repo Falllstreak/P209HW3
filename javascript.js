@@ -1,35 +1,51 @@
+let myArray = [2, 3, 4];
+let x = myArray
+
 document.addEventListener("DOMContentLoaded", function (event) {
 
-    let myArray = [2, 3, 4];
+    document.getElementById("output1").value = x[0];
+    document.getElementById("output2").value = x[1];
+    document.getElementById("output3").value = x[2];
 
-    document.getElementById("square").addEventListener("click", function () {
-        let x = myArray.map(mySquare);
-        //let x = myArray.map(x => x.Square);
-        document.getElementById("output1").value = x;
-    });
-    
     document.getElementById("cubed").addEventListener("click", function () {
         let x = myArray.map(myCubed);
         
 
-        document.getElementById("output2").value = x;
+        document.getElementById("output1").value = x[0];
+        document.getElementById("output2").value = x[1];
+        document.getElementById("output3").value = x[2];
     });
-    
-    document.getElementById("fourth").addEventListener("click", function () {
+
+
+    document.getElementById("fourth").addEventListener("click", function fourthFunction () {
         let x = myArray.map(fourthFunction)
-        document.getElementById("output3").value = x;
+        document.getElementById("output1").value = x[0];
+        document.getElementById("output2").value = x[1];
+        document.getElementById("output3").value = x[2];
+
+        function fourthFunction(oneNum) {
+            return Math.pow(oneNum, 4);
+        }
+
+
     });
+
+
 });
 
-function mySquare(oneItem) {
-    return Math.pow(oneItem, 2);
-}
 
-function myCubed(oneItem) {
-    return Math.pow(oneItem, 3)();
-}
+function mySquare (mySquare) {
+    let x = myArray.map(mySquare);
+    //let x = myArray.map(x => x.Square);
+    function mySquare(oneNum) {
+        return Math.pow(oneNum, 2);
+    }
+    
+    document.getElementById("output1").value = x[0];
+    document.getElementById("output2").value = x[1];
+    document.getElementById("output3").value = x[2];
+};
 
-function fourthFunction(oneItem) {
-    charArray = Array.from(oneItem)
-    return charArray[0];
+let myCubed = function (oneNum) {
+    return Math.pow(oneNum, 3);
 }
