@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
 
+// Correct way to call a Function by name:
+
+    document.getElementById("fourth").addEventListener("click", doFourthFunction);
+    
+/*     Incorrect Way to call a Function by name:
+
+
     document.getElementById("fourth").addEventListener("click", function fourthFunction () {
         let x = myArray.map(fourthFunction)
         document.getElementById("output1").value = x[0];
@@ -28,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
 
-    });
+    }); */
 
 
 });
@@ -48,4 +55,15 @@ function mySquare (mySquare) {
 
 let myCubed = function (oneNum) {
     return Math.pow(oneNum, 3);
+}
+
+function doFourthFunction(){
+    let x = myArray.map(fourthFunction)
+    document.getElementById("output1").value = x[0];
+    document.getElementById("output2").value = x[1];
+    document.getElementById("output3").value = x[2];
+}
+
+function fourthFunction(oneNum) {
+    return Math.pow(oneNum, 4);
 }
